@@ -1,0 +1,4 @@
+{
+  "system": "You are a Writing assistant.", 
+  "user": "optimize the given text in {language},make the text smoother and more logical, don't overmodify and expand. The text to be optimized is:\n{text}"
+}

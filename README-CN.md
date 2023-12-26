@@ -56,8 +56,27 @@ python3 make_book.py --book_name test_books/animal_farm.epub --openai_key ${open
 
 # 或翻译完整本书
 python3 make_book.py --book_name test_books/animal_farm.epub --openai_key ${openai_key} --language zh-hans
+python make_book.py --book_name test_books/test01.epub --openai_key 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 --language zh-hans
+python make_book.py --book_name test_books/test03.epub --openai_key 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 --language zh-hans
 
+python make_book.py --book_name test_books/test01.epub --openai_key sk-yhfPCspYkYaqtnDctnWcFAstFCdFELjxmyLXiTHaNdsuODTP --language zh-hans
+python make_book.py --book_name test_books/Salatino_Final_Interior.epub --openai_key sk-yhfPCspYkYaqtnDctnWcFAstFCdFELjxmyLXiTHaNdsuODTP --language zh-hans
 # 指定环境变量来略过 --openai_key
+
+```
+python make_book.py --book_name test_books/InterpretableMachineLearningwithPython.epub --openai_key sk-MLtxqExpBjEHEbvrFGtduJQUoefJjFEOGJZhEUPEKHpIMLjs --api_base https://api.open-proxy.cn
+python make_book.py --book_name test_books/MLOps.epub --openai_key sk-vBlNjDfEIUl9TDv09a95332dCcE346Ea9d0eB96cC2B398C3 --api_base 'https://api.ngapi.top/v1' --resume 未完成
+python make_book.py --book_name test_books/MySQLCrashCourse.epub --openai_key sk-BAJaSinHeoXWcOJfBrlrUgrXpygZYYBSHKxbfgHPctuxNLBA --api_base 'https://api.ngapi.top/v1' --resume
+```
+
+```
+python make_book.py --book_name test_books/python.epub --openai_key sk-MLtxqExpBjEHEbvrFGtduJQUoefJjFEOGJZhEUPEKHpIMLjs --api_base 'https://api.ngapi.top/v1' --translate-tags h1,h2,h3,p,div,li
+```
+
+```
+python make_book.py --book_name test_books/13.epub --openai_key sk-MLtxqExpBjEHEbvrFGtduJQUoefJjFEOGJZhEUPEKHpIMLjs --api_base 'https://api.ngapi.top/v1' --prompt prompt_template_sample2.json
+```
+
 export OPENAI_API_KEY=${your_api_key}
 
 # 或使用 gpt3 模型
